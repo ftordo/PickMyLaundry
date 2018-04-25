@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/idTvEstadoServico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ba171f"
+        android:textSize="40sp"
+        android:text="Estado Serviço" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#938f8f"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idTvServico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serviço:" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvNaLavandaria"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Na Lavandaria:" />
+
+
+            <CheckBox
+                android:id="@+id/idCbNaLavandaria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvEntreguesEstafeta"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Entregue ao estafeta:" />
+
+            <CheckBox
+                android:id="@+id/idCbEntregueEstafeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvTempoPrevisto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempo previsto chegada:" />
+
+            <EditText
+                android:id="@+id/idEtTempoPrevisto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/idBtnEntregue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entregue" />
+
+    </LinearLayout>
+
+</LinearLayout>

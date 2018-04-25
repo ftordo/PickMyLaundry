@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="450dp"
+    android:background="@drawable/gradient2"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Cliente:" />
+
+    <TextView
+        android:id="@+id/idTvCliente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textSize="30sp"
+        android:text="Hugo Macoas"
+        android:gravity="center"
+        android:textColor="#FF000000"/>
+
+    <RelativeLayout
+        android:id="@+id/idRlDados"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idTvCliente"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/idTvMorada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38dp"
+
+            android:gravity="center"
+            android:text="Santarem, Rua Xico nº5"
+            android:textColor="#FF000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/idTvLavandariaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:gravity="center"
+            android:text="Lavandaria Tania Dimas"
+            android:textColor="#FF000000"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            app:srcCompat="@drawable/ic_action_aceitar" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            app:srcCompat="@drawable/ic_action_rejeitar" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/idTvMorada"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="21dp"
+            android:text="Lavandaria:" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginTop="19dp"
+            android:text="Morada:" />
+
+        <TextView
+            android:id="@+id/idTvDistancia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/idTvLavandariaCliente"
+            android:layout_marginTop="12dp"
+            android:text="Distancia"
+            />
+
+        <TextView
+            android:id="@+id/idTvDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/idTvDistancia2"
+            android:text="5km"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="#FF000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

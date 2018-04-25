@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joaomadeira.android.appddm.ReqServ4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llrs4">
+        <TextView
+            android:id="@+id/idTvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ba171f"
+            android:text="Confirmação pedido"/>
+
+        <TextView
+            android:id="@+id/idTvResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo pedido:"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Preço lavagem:"/>
+
+            <TextView
+                android:id="@+id/idTvPrecoLavagem"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Preço engomar:"/>
+
+            <TextView
+                android:id="@+id/idTvPrecoEngomar"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Preço transporte:"/>
+
+            <TextView
+                android:id="@+id/idTvPrecoTransporte"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Preço total:"/>
+
+            <TextView
+                android:id="@+id/idTvPrecoTotal"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/idBtnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"/>
+        <Button
+            android:id="@+id/idBtnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

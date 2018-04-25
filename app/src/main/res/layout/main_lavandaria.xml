@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bk4"
+    tools:context="com.joaomadeira.android.appddm.MainLavandaria">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/idllIdentificacao"
+        android:background="#1a2d5e">
+
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/idTvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strUser"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="60dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnRecebidos"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idllIdentificacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="Pendentes"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/idBtnALavar"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idBtnRecebidos"
+        android:layout_alignStart="@+id/idBtnRecebidos"
+        android:layout_below="@+id/idBtnRecebidos"
+        android:layout_marginTop="90dp"
+        android:text="A Lavar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/idBtnPronto"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idBtnALavar"
+        android:layout_alignStart="@+id/idBtnALavar"
+        android:layout_below="@+id/idBtnALavar"
+        android:layout_marginTop="90dp"
+        android:text="Pronto"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+</RelativeLayout>

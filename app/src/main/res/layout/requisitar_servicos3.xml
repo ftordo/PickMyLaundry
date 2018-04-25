@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joaomadeira.android.appddm.ReqServ3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llrs3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvLavandaria"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Lavandaria:"/>
+
+            <TextView
+                android:id="@+id/idTvLavandariaSelecionada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idTvDia"
+                android:layout_width="113dp"
+                android:layout_height="20dp"
+                android:text="Dia:" />
+
+            <DatePicker
+                android:id="@+id/idDateDia"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/idTvHora"
+                android:layout_width="113dp"
+                android:layout_height="34dp"
+                android:text="Hora:" />
+
+            <TimePicker
+                android:id="@+id/idTimeHoras"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:timePickerMode="spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/idBtnPontoRecolha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ponto de Recolha" />
+
+            <TextView
+                android:id="@+id/idTvPontoRecolha"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/idBtnPontoEntrega"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ponto de Entrega" />
+
+            <TextView
+                android:id="@+id/idTvPontoEntrega"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idBtnSegunte3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/arrownext" />
+</RelativeLayout>

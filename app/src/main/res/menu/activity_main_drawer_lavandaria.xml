@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/nav_inicio"
+                android:icon="@drawable/ic_action_name_home"
+                android:title="Inicio" />
+            <item
+                android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_action_name"
+                android:title="Perfil" />
+            <item
+                android:id="@+id/nav_recebido"
+                android:icon="@drawable/ic_meus_pedidos"
+                android:title="Recebido" />
+            <item
+                android:id="@+id/nav_aLavar"
+                android:icon="@drawable/ic_meus_pedidos"
+                android:title="A lavar" />
+            <item
+                android:id="@+id/nav_pronto"
+                android:icon="@drawable/ic_meus_pedidos"
+                android:title="Pronto" />
+        </menu>
+    </item>
+
+    <item android:title="Empresa">
+        <menu>
+            <item
+                android:id="@+id/nav_sobre"
+                android:icon="@drawable/ic_sobre_nos"
+                android:title="Sobre Nós" />
+            <item
+                android:id="@+id/nav_suporte"
+                android:icon="@drawable/ic_suporte"
+                android:title="Suporte" />
+
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/ic_action_name_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

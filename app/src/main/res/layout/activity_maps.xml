@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.joaomadeira.android.appddm.MainMap">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/idllIdentificacao"
+        android:background="#1a2d5e">
+
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/idTvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strUser"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:paddingLeft="60dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/idGmapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/idllIdentificacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.joaomadeira.android.appddm.MainMap" />
+    <Button
+        android:id="@+id/idBtnPedido"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/idGmapFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/icon_lav" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/idllIdentificacao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradient"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:id="@+id/idTvInfo"/>
+
+</RelativeLayout>

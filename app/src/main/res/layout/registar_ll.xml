@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/contact_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Registo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:id="@+id/idTvErro"/>
+
+    <EditText
+        android:id="@+id/idEtNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/idEtApelido"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Apelido"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/idEtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/idEtTelefone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idTvMorada"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="text"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/idBtnLocalizar"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:text="Morada"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/idEtPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/idEtPassConf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Confirmar Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/idEtIdade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Idade"
+        android:maxLength="3"
+        android:inputType="number"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/idBtnRegistar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Registar"
+        android:textColor="#fff" />
+
+</LinearLayout>
